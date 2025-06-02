@@ -53,7 +53,7 @@ Error generating stack: `+a.message+`
   align-items: start;
   box-sizing: border-box;
   margin: 1%;
-  
+  background: white;  
 `;Wa.div`
   display: flex;
   flex-direction: column;
