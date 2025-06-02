@@ -17,7 +17,7 @@ const App = () => {
     setData(rev);
   }, []);
   const generateImage = (url) =>{
-      const urlPic =  `${window.location.href}src/assets${url}`
+      const urlPic =  `${window.location.href}assets${url}`
       return url && <ImgSt src={urlPic} alt="*" />
     }
   
@@ -32,10 +32,10 @@ const App = () => {
   
   return (
   <CellStyle key={i} color={i} onMouseOver={() => showTooltip(name)}>
-      <div style={{fontSize: '1rem',display:'flex', alignSelf:'baseline'}}>{year}</div>
+      <div style={{fontSize: '.6rem',display:'flex', alignSelf:'baseline'}}>{year} {ck}</div>
       {generateImage(pic)}
-      <div style={{fontSize: '1rem',display:'flex', alignSelf:'self-end'}}>{ck}</div>
-      {printName(name)}
+      <div style={{fontSize: '.6rem',display:'flex', alignSelf:'self-end'}}>{name} </div>
+      
     </CellStyle>
     )
   }
