@@ -21,20 +21,20 @@ const App = () => {
       return url && <ImgSt src={urlPic} alt="*" />
     }
   
-  const showTooltip = (info) => console.log(info);
-  const printName = (name) => name && <Name>{name}</Name>;
+  const showTooltip = (info) => {};//console.log(info);
+
 
   const cell = (i, name, pic,countryCode, year) => {   
     if (countryCode === undefined || countryCode === '') return (<></>)
     const ck = emojiFlags.countryCode(countryCode).emoji
 
-    console.log(year)
+    
   
   return (
   <CellStyle key={i} color={i} onMouseOver={() => showTooltip(name)}>
-      <div style={{fontSize: '.6rem',display:'flex', alignSelf:'baseline'}}>{year} {ck}</div>
+      <div style={{fontSize: '.6rem',display:'flex', alignSelf:'baseline', color:'black'}}>{year} {ck}</div>
       {generateImage(pic)}
-      <div style={{fontSize: '.6rem',display:'flex', alignSelf:'self-end'}}>{name} </div>
+      <div style={{fontSize: '.6rem',display:'flex', alignSelf:'self-end', color:'black'}}>{name} </div>
       
     </CellStyle>
     )
@@ -44,7 +44,7 @@ const App = () => {
     return (
       <>
       
-      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%'}}>
+      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center',margin: '2rem'}}>
       <h2>O Marisquiño Skateboarding Kids!</h2>
       </div>
 
@@ -52,7 +52,7 @@ const App = () => {
         <h2>Street Men! (2001-2024)</h2>
       </div>
 
-      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%'}}>
+      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
         {dataReversed.map((yearResults, i) => (
           <div style={{display:'flex', flexFlow: 'row wrap'}}>
             {objectModelStreetMen.map((model, i) =>
@@ -66,7 +66,7 @@ const App = () => {
           <h2>Street Women! (2013-2024)</h2>
         </div>
 
-        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%'}}>
+        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
         {dataReversed.map((yearResults, i) => (
           <div style={{display:'flex', flexFlow: 'row wrap'}}>
             {objectModelStreetWomen.map((model, i) =>
@@ -76,11 +76,11 @@ const App = () => {
         ))}
         </div>
 
-        <div style={{display:'flex', flexFlow: 'row wrap'}}>
-          <h2>Miniramp! (2016-2024)</h2>
-        </div>
+        <div style={{ display: 'flex', flexFlow: 'row wrap', justifyContent: 'center' }}>
+        <h2 className="colorful-text">Miniramp! (2016-2024)</h2>
+      </div>
 
-        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%'}}>
+        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
         {dataReversed.map((yearResults, i) => (
           <div style={{display:'flex', flexFlow: 'row wrap'}}>
             {objectModelMiniramp.map((model, i) =>
@@ -90,7 +90,7 @@ const App = () => {
         ))}
         </div>
         
-        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%'}}>
+        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
           <h2>Adaptive! (2024!)</h2>
         </div>
 

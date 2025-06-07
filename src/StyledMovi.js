@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const GridStyle = styled.div`
   display: flex;
   flex-flow: row wrap;
-  align-items: start;
+  justify-content: center;
   box-sizing: border-box;
   margin: 1%;
   background: white;  
@@ -16,7 +16,6 @@ export const ColumnStyle = styled.div`
   justify-content: space-between;
   /* background: ${(props) => (props.color % 2 ? "#FFF" : "#EFF3")}; */
   z-index: -1;
-  // border: 1px solid black;
 `;
 
 export const CellStyle = styled.div`
@@ -31,7 +30,7 @@ export const CellStyle = styled.div`
   width: 80px;
   // padding: 1rem;
   // border: 1px solid #00000008 ;
-  margin: 2rem;
+  margin: 1rem;
 
 `;
 
@@ -46,9 +45,9 @@ export const TitleCell = styled(CellStyle)`
 `;
 
 export const ImgSt = styled.img`
-  height: 75%;
-  width: 60%;
-  filter: grayscale(100%) drop-shadow(2px 2px 1px gray);
+  height: 85%;
+  width: 70%;
+  filter: grayscale(100%) drop-shadow(2px 2px 0px black);
   z-index: 1;
 
   
