@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { wins } from "./data/winnersTable";
 import {
   GridStyle,
-  Name,
   CellStyle,
   ImgSt,
 } from "./StyledMovi";
@@ -44,11 +43,21 @@ const App = () => {
     return (
       <>
       
-      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center',margin: '2rem'}}>
+      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center',margin: '2rem',
+                  fontWeight: 'bold',
+                  fontSize: '1.2rem',
+                  color: 'transparent',
+                  WebkitTextStroke: '.6px white',
+                  textAlign: 'center',
+                  }}>
       <h2>O Marisquiño Skateboarding Kids!</h2>
       </div>
 
-      <div style={{display:'flex', flexFlow: 'row wrap'}}>
+      <div style={{display:'flex', flexFlow: 'row wrap',
+                    fontWeight: 'bold',
+                    background: 'linear-gradient(to right, red, #7873f5)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',}}>
         <h2>Street Men! (2001-2024)</h2>
       </div>
 
@@ -62,7 +71,11 @@ const App = () => {
         ))}
         </div>
 
-        <div style={{display:'flex', flexFlow: 'row wrap'}}>
+        <div style={{display:'flex', flexFlow: 'row wrap',
+                          fontWeight: 'bold',
+                          background: 'linear-gradient(to right, blue, orange)',
+                          WebkitBackgroundClip: 'text',
+                          WebkitTextFillColor: 'transparent',}}>
           <h2>Street Women! (2013-2024)</h2>
         </div>
 
@@ -76,7 +89,29 @@ const App = () => {
         ))}
         </div>
 
-        <div style={{ display: 'flex', flexFlow: 'row wrap', justifyContent: 'center' }}>
+        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center',
+                          fontWeight: 'bold',
+                          background: 'linear-gradient(to right, lightgreen, black)',
+                          WebkitBackgroundClip: 'text',
+                          WebkitTextFillColor: 'transparent',}}>
+          <h2>Adaptive! (2024!)</h2>
+        </div>
+
+        <div style={{display:'flex', flexFlow: 'row wrap'}}>
+        {dataReversed.map((yearResults, i) => (
+          <div style={{display:'flex', flexFlow: 'row wrap'}}>
+            {objectModelAdaptive.map((model, i) =>
+                cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
+            )}
+          </div>
+        ))}
+        </div>
+
+        <div style={{ display: 'flex', flexFlow: 'row wrap', justifyContent: 'center',
+                          fontWeight: 'bold',
+                          background: 'linear-gradient(to right, gold, green)',
+                          WebkitBackgroundClip: 'text',
+                          WebkitTextFillColor: 'transparent', }}>
         <h2 className="colorful-text">Miniramp! (2016-2024)</h2>
       </div>
 
@@ -90,19 +125,7 @@ const App = () => {
         ))}
         </div>
         
-        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
-          <h2>Adaptive! (2024!)</h2>
-        </div>
 
-        <div style={{display:'flex', flexFlow: 'row wrap'}}>
-        {dataReversed.map((yearResults, i) => (
-          <div style={{display:'flex', flexFlow: 'row wrap'}}>
-            {objectModelAdaptive.map((model, i) =>
-                cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
-            )}
-          </div>
-        ))}
-        </div>
       </>
     );
   };

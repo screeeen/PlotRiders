@@ -5,8 +5,17 @@ export const GridStyle = styled.div`
   flex-flow: row wrap;
   justify-content: center;
   box-sizing: border-box;
-  margin: 1%;
-  background: white;  
+  background: linear-gradient(
+    to bottom, 
+    #ffb39b 0%,      /* naranja muy claro (sol suave) */
+    #f7b733 92%,     /* amarillo suave (cielo) */
+    #2e3192 95%,     /* azul profundo (mar) */
+    #1b2735 100%     /* azul muy oscuro (noche) */
+   
+    // #f9e38b 92%,     /* amarillo pálido (cielo claro) */
+    // #7a8cc6 95%,     /* azul pastel (mar suave) */
+    // #374a61 100%     /* azul grisáceo (noche tenue) */
+  ); 
 `;
 
 export const ColumnStyle = styled.div`
