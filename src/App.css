@@ -1,42 +1,69 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.gridStyle {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to bottom,
+
+    #ffeae5 0%,
+    /* naranja pastel muy claro */ #fff9da 92%,
+    /* amarillo crema pálido */ #e7ecf7 95%,
+    /* azul gris claro */ #dce1e9 100% /* azul casi blanco */
+  );
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  display: 'flex';
+  flex-flow: 'row wrap';
+  width: '100%';
+  justify-content: 'center';
+  margin: '2rem';
+  font-weight: 'bold';
+  font-size: '1.2rem';
+  color: 'transparent';
+  text-align: 'center';
+  background: 'linear-gradient(45deg, black, yellow)';
+  border: 1px solid blue;
+  /* 
+  webkittextstroke: '.4px white';
+  webkitbackgroundclip: 'text';
+  webkittextfillcolor: 'transparent'; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.categoryTitle {
+  display: 'flex';
+  flex-flow: 'row wrap';
+  width: '100%';
+  justify-content: 'center';
+  font-weight: 'bold';
 }
 
-.card {
-  padding: 2em;
+.adaptiveTitle {
+  background: 'linear-gradient(to right, lightgreen, black)';
+  /* WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent', */
 }
 
-.read-the-docs {
-  color: #888;
+.womenTitle {
+  background: 'linear-gradient(to right, blue, orange)';
+  /* WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent', */
+}
+
+.row {
+  display: 'flex';
+  flex-flow: 'row wrap';
+}
+
+.categoryContent {
+  display: 'flex';
+  flex-flow: 'row wrap';
+  width: '100%';
+  justify-content: 'center';
 }

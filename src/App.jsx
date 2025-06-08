@@ -1,139 +1,148 @@
-import React, { useState, useEffect } from "react";
-import { wins } from "./data/winnersTable";
+import React from 'react';
 import {
-  GridStyle,
-  CellStyle,
-  ImgSt,
-} from "./StyledMovi";
-import emojiFlags from "emoji-flags";
-import { objectModelStreetWomen, objectModelStreetMen, objectModelAdaptive, objectModelMiniramp } from "./CONSTANTS";
+  objectModelStreetWomen,
+  objectModelStreetMen,
+  objectModelAdaptive,
+  objectModelMiniramp,
+} from './CONSTANTS';
+import { useContestsData } from './useContestsData';
+import { makeCell } from './App.utils';
+
+import './App.css';
+import { intro } from './texts';
 
 const App = () => {
-  const [dataReversed, setData] = useState(null);
-  useEffect(() => {
-    // const rev = wins.reverse();
-    const rev = wins;
-    setData(rev);
-  }, []);
-  const generateImage = (url) =>{
-      const urlPic =  `${window.location.href}assets${url}`
-      return url && <ImgSt src={urlPic} alt="*" />
-    }
-  
-  const showTooltip = (info) => {};//console.log(info);
+  const dataReversed = useContestsData();
+  if (!dataReversed) return <></>;
 
-
-  const cell = (i, name, pic,countryCode, year) => {   
-    if (countryCode === undefined || countryCode === '') return (<></>)
-    const ck = emojiFlags.countryCode(countryCode).emoji
-
-    
-  
   return (
-  <CellStyle key={i} color={i} onMouseOver={() => showTooltip(name)}>
-      <div style={{fontSize: '.6rem',display:'flex', alignSelf:'baseline', color:'black'}}>{year} {ck}</div>
-      {generateImage(pic)}
-      <div style={{fontSize: '.6rem',display:'flex', alignSelf:'self-end', color:'black'}}>{name} </div>
-      
-    </CellStyle>
-    )
-  }
-  
-  const generateCells = () => {
-    return (
-      <>
-      
-      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center',margin: '2rem',
-                  fontWeight: 'bold',
-                  fontSize: '1.2rem',
-                  color: 'transparent',
-                  WebkitTextStroke: '.4px white',
-                  textAlign: 'center',
-                  background: 'linear-gradient(45deg, black, yellow)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent'
-                  }}>
-      <h2>O Marisquiño Skateboarding Kids!</h2>
+    <div className="gridStyle">
+      {/* <p>{intro()}</p> */}
+      <div>
+        <h2 className="title">O Marisquiño Skateboarding Kids!</h2>
       </div>
 
+      <div className="categoryTitle adaptiveTitle">
+        <h2>Adaptive! (2024!)</h2>
+      </div>
 
-      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center',
-                          fontWeight: 'bold',
-                          background: 'linear-gradient(to right, lightgreen, black)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',}}>
-          <h2>Adaptive! (2024!)</h2>
-        </div>
-
-        <div style={{display:'flex', flexFlow: 'row wrap'}}>
-        {dataReversed.map((yearResults) => (
-          <div style={{display:'flex', flexFlow: 'row wrap'}}>
+      <div className="row">
+        {dataReversed.map(yearResults => (
+          <div className="row">
             {objectModelAdaptive.map((model, i) =>
-                cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
+              makeCell(
+                i,
+                yearResults[model],
+                yearResults[`${model}Pic`],
+                yearResults[`${model}Country`],
+                yearResults['year']
+              )
             )}
           </div>
         ))}
-        </div>
+      </div>
 
-        <div style={{display:'flex', flexFlow: 'row wrap',
-                          fontWeight: 'bold',
-                          background: 'linear-gradient(to right, blue, orange)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',}}>
-          <h2>Street Women! (2013-2024)</h2>
-        </div>
+      <div className="categoryTitle womenTitle">
+        <h2>Street Women! (2013-2024)</h2>
+      </div>
 
-        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
-        {dataReversed.map((yearResults) => (
-          <div style={{display:'flex', flexFlow: 'row wrap'}}>
+      <div
+        style={{
+          display: 'flex',
+          flexFlow: 'row wrap',
+          width: '100%',
+          justifyContent: 'center',
+        }}
+      >
+        {dataReversed.map(yearResults => (
+          <div className="row">
             {objectModelStreetWomen.map((model, i) =>
-                cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
+              makeCell(
+                i,
+                yearResults[model],
+                yearResults[`${model}Pic`],
+                yearResults[`${model}Country`],
+                yearResults['year']
+              )
             )}
           </div>
         ))}
-        </div>
+      </div>
 
-        <div style={{ display: 'flex', flexFlow: 'row wrap', justifyContent: 'center',
-                          fontWeight: 'bold',
-                          background: 'linear-gradient(to right, gold, green)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent', }}>
+      <div
+        style={{
+          display: 'flex',
+          flexFlow: 'row wrap',
+          justifyContent: 'center',
+          fontWeight: 'bold',
+          background: 'linear-gradient(to right, gold, green)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+        }}
+      >
         <h2 className="colorful-text">Miniramp! (2016-2024)</h2>
       </div>
 
-        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
-        {dataReversed.map((yearResults) => (
-          <div style={{display:'flex', flexFlow: 'row wrap'}}>
+      <div
+        style={{
+          display: 'flex',
+          flexFlow: 'row wrap',
+          width: '100%',
+          justifyContent: 'center',
+        }}
+      >
+        {dataReversed.map(yearResults => (
+          <div className="row">
             {objectModelMiniramp.map((model, i) =>
-                cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
+              makeCell(
+                i,
+                yearResults[model],
+                yearResults[`${model}Pic`],
+                yearResults[`${model}Country`],
+                yearResults['year']
+              )
             )}
           </div>
         ))}
-        </div>
+      </div>
 
-        <div style={{display:'flex', flexFlow: 'row wrap',
-                    fontWeight: 'bold',
-                    background: 'linear-gradient(to right, red, #7873f5)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',}}>
+      <div
+        style={{
+          display: 'flex',
+          flexFlow: 'row wrap',
+          fontWeight: 'bold',
+          background: 'linear-gradient(to right, red, #7873f5)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+        }}
+      >
         <h2>Street Men! (2001-2024)</h2>
       </div>
 
-      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
-        {dataReversed.map((yearResults) => (
-          <div style={{display:'flex', flexFlow: 'row wrap'}}>
+      <div
+        style={{
+          display: 'flex',
+          flexFlow: 'row wrap',
+          width: '100%',
+          justifyContent: 'center',
+        }}
+      >
+        {dataReversed.map(yearResults => (
+          <div className="row">
             {objectModelStreetMen.map((model, i) =>
-                cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
+              makeCell(
+                i,
+                yearResults[model],
+                yearResults[`${model}Pic`],
+                yearResults[`${model}Country`],
+                yearResults['year']
+              )
             )}
           </div>
         ))}
-        </div>
-        
-
-      </>
-    );
-  };
-  return <GridStyle>{dataReversed && generateCells()}</GridStyle>;
+      </div>
+    </div>
+  );
 };
 
-export default App
+export default App;
