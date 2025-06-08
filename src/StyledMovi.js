@@ -7,10 +7,17 @@ export const GridStyle = styled.div`
   box-sizing: border-box;
   background: linear-gradient(
     to bottom, 
-    #ffb39b 0%,      /* naranja muy claro (sol suave) */
-    #f7b733 92%,     /* amarillo suave (cielo) */
-    #2e3192 95%,     /* azul profundo (mar) */
-    #1b2735 100%     /* azul muy oscuro (noche) */
+
+    #ffeae5 0%,     /* naranja pastel muy claro */
+    #fff9da 92%,    /* amarillo crema pálido */
+    #e7ecf7 95%,    /* azul gris claro */
+    #dce1e9 100%    /* azul casi blanco */
+
+
+    // #ffb39b 0%,      /* naranja muy claro (sol suave) */
+    // #f7b733 92%,     /* amarillo suave (cielo) */
+    // #2e3192 95%,     /* azul profundo (mar) */
+    // #1b2735 100%     /* azul muy oscuro (noche) */
    
     // #f9e38b 92%,     /* amarillo pálido (cielo claro) */
     // #7a8cc6 95%,     /* azul pastel (mar suave) */

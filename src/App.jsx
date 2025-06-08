@@ -47,24 +47,28 @@ const App = () => {
                   fontWeight: 'bold',
                   fontSize: '1.2rem',
                   color: 'transparent',
-                  WebkitTextStroke: '.6px white',
+                  WebkitTextStroke: '.4px white',
                   textAlign: 'center',
+                  background: 'linear-gradient(45deg, black, yellow)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent'
                   }}>
       <h2>O Marisquiño Skateboarding Kids!</h2>
       </div>
 
-      <div style={{display:'flex', flexFlow: 'row wrap',
-                    fontWeight: 'bold',
-                    background: 'linear-gradient(to right, red, #7873f5)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',}}>
-        <h2>Street Men! (2001-2024)</h2>
-      </div>
 
-      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
-        {dataReversed.map((yearResults, i) => (
+      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center',
+                          fontWeight: 'bold',
+                          background: 'linear-gradient(to right, lightgreen, black)',
+                          WebkitBackgroundClip: 'text',
+                          WebkitTextFillColor: 'transparent',}}>
+          <h2>Adaptive! (2024!)</h2>
+        </div>
+
+        <div style={{display:'flex', flexFlow: 'row wrap'}}>
+        {dataReversed.map((yearResults) => (
           <div style={{display:'flex', flexFlow: 'row wrap'}}>
-            {objectModelStreetMen.map((model, i) =>
+            {objectModelAdaptive.map((model, i) =>
                 cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
             )}
           </div>
@@ -80,27 +84,9 @@ const App = () => {
         </div>
 
         <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
-        {dataReversed.map((yearResults, i) => (
+        {dataReversed.map((yearResults) => (
           <div style={{display:'flex', flexFlow: 'row wrap'}}>
             {objectModelStreetWomen.map((model, i) =>
-                cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
-            )}
-          </div>
-        ))}
-        </div>
-
-        <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center',
-                          fontWeight: 'bold',
-                          background: 'linear-gradient(to right, lightgreen, black)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',}}>
-          <h2>Adaptive! (2024!)</h2>
-        </div>
-
-        <div style={{display:'flex', flexFlow: 'row wrap'}}>
-        {dataReversed.map((yearResults, i) => (
-          <div style={{display:'flex', flexFlow: 'row wrap'}}>
-            {objectModelAdaptive.map((model, i) =>
                 cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
             )}
           </div>
@@ -116,9 +102,27 @@ const App = () => {
       </div>
 
         <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
-        {dataReversed.map((yearResults, i) => (
+        {dataReversed.map((yearResults) => (
           <div style={{display:'flex', flexFlow: 'row wrap'}}>
             {objectModelMiniramp.map((model, i) =>
+                cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
+            )}
+          </div>
+        ))}
+        </div>
+
+        <div style={{display:'flex', flexFlow: 'row wrap',
+                    fontWeight: 'bold',
+                    background: 'linear-gradient(to right, red, #7873f5)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',}}>
+        <h2>Street Men! (2001-2024)</h2>
+      </div>
+
+      <div style={{display:'flex', flexFlow: 'row wrap', width:'100%', justifyContent: 'center'}}>
+        {dataReversed.map((yearResults) => (
+          <div style={{display:'flex', flexFlow: 'row wrap'}}>
+            {objectModelStreetMen.map((model, i) =>
                 cell(i, yearResults[model], yearResults[`${model}Pic`],yearResults[`${model}Country`],yearResults['year'])
             )}
           </div>
