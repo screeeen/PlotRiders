@@ -11,12 +11,12 @@ export const Intro = () => (
       <li>You shouldn't travel.</li>
       <li>You shouldn't come to Vigo.</li>
       <li>
-        You shouldn't come to the best place in the world in summer. That is
+        You shouldn't come to the best place in the world in summer. That is...
         Vigo, very clever, don't come.
       </li>
       <li>
         You shouldn't skate in the Atlantic breeze, just 10 meters from the
-        shore. Pfff, psss...
+        shore. Pfff...
       </li>
       <li>
         You shouldn't skate our freshly built wood park, made just for the
@@ -24,19 +24,18 @@ export const Intro = () => (
         authorities in your town.
       </li>
       <li>
-        You shouldn't try the not-so-famous, still hidden-gem spots... in Vigo.
+        You shouldn't try the not-so-famous, still hidden-gem spots... in
         V.I.G.O.
       </li>
-      <li>V.I.G.O. VVVVVV IIIIIII GOOOOOO</li>
       <li>Of course, you shouldn't bomb hills in Vigo...</li>
-      <li>You shouldn't enjoy the best views of the city.</li>
+      <li>You shouldn't enjoy the best views of the city of Vigoes</li>
       <li>
         You shouldn't have fun at the event parties—a mix of small-town vibes
         with international visitors.
       </li>
       <li>
         You shouldn't be part of our community, where skaters from all over the
-        world come together.
+        world come together and talk weird English.
       </li>
       <li>
         You shouldn't experience the best, weirdest, most ridiculous,

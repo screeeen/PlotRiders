@@ -93,11 +93,15 @@
   color: black;
 }
 
-img {
+#portraits img {
   height: 85%;
   width: 70%;
   filter: grayscale(100%) drop-shadow(2px 2px 0px black);
   z-index: 1;
+}
+
+img {
+  width: 100%;
 }
 
 /* GENERAL TEXT */

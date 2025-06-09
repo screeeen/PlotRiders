@@ -3,26 +3,32 @@ import React from 'react';
 export const VigoSkateCitySpots = () => {
   return (
     <div id="vigoskatecityspots">
-      <h2>Vigo Skate City Spots and Some Geek Notes</h2>
+      <h2>Vigo Skate City Spots and Some Geek Notes (and shitty pictures)</h2>
 
       {/* Pza de la Estrella */}
       <div>
-        <h3>Pza de la Estrella</h3>
+        <h3>
+          <a
+            href="https://goo.gl/maps/NwxkiK6udJaRH8q3A"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pza de la Estrella
+          </a>
+        </h3>
         <p>
-          Classic street spot known for shooting in several videos for the last
-          two decades. Salabanzi could have been the first at Flip’s *Sorry*.
-          Suciu, Silvas, Milou… latest clips for the Adidas reel.
+          Classic street spot known for appearing in skate videos for over two
+          decades. Salabanzi may have been the first to hit it in Flip’s{' '}
+          <em>Sorry</em>. Suciu, Silvas, Milou… all showed up in the latest
+          Adidas edits.
         </p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.312136125563!2d-8.72591562376508!3d42.23605697119717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f6260b1593ba7%3A0xf3970b3a4e3971f3!2sPraza%20da%20Estrela!5e0!3m2!1sen!2ses!4v1717770000000"
-          width="100%"
-          height="300"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
         <img
-          src="assets/images/estrella.jpg"
+          src={`${window.location.href}assets/images/estrella.png`}
+          alt="Pza de la Estrella"
+          style={{ width: '100%', maxWidth: 600 }}
+        />
+        <img
+          src={`${window.location.href}assets/images/estrella2.png`}
           alt="Pza de la Estrella"
           style={{ width: '100%', maxWidth: 600 }}
         />
@@ -30,18 +36,23 @@ export const VigoSkateCitySpots = () => {
 
       {/* Náutico y Berbés */}
       <div>
-        <h3>Náutico y Berbés</h3>
-        <p>Blocks!</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.3648536569243!2d-8.726867923765172!3d42.23488617119612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f6260a749b695%3A0x263cba23000abbbc!2sN%C3%A1utico%20de%20Vigo!5e0!3m2!1sen!2ses!4v1717770000001"
-          width="100%"
-          height="300"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
+        <h3>
+          <a
+            href="https://goo.gl/maps/btnVuJNrFzU35s1w8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Náutico y Berbés
+          </a>
+        </h3>
+        <p>Blocks, stairs, infinite ledges... marble</p>
         <img
-          src="assets/images/nautico.jpg"
+          src={`${window.location.href}assets/images/nautico.png`}
+          alt="Náutico y Berbés"
+          style={{ width: '100%', maxWidth: 600 }}
+        />
+        <img
+          src={`${window.location.href}assets/images/bahia.jpg`}
           alt="Náutico y Berbés"
           style={{ width: '100%', maxWidth: 600 }}
         />
@@ -49,29 +60,29 @@ export const VigoSkateCitySpots = () => {
 
       {/* Praza do Berbés */}
       <div>
-        <h3>Praza do Berbés</h3>
+        <h3>
+          <a
+            href="https://goo.gl/maps/xZDxf3MCdamAdJA87"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Praza do Berbés
+          </a>
+        </h3>
         <p>
-          9 stairs and ledges, a classic spot for evening jams. Levi Brown
-          flipped the roundabout sculpture over a decade ago — got a
+          9 stairs and ledges. A classic evening jam spot. Levi Brown flipped
+          the roundabout sculpture more than a decade ago — featured on a{' '}
           <a
             href="https://www.skateboarding.com/features/hot-off-the-press-levi-brown-december-2011"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {' '}
-            Transworld cover.
+            Transworld cover
           </a>
+          .
         </p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.3039609057816!2d-8.727634523765091!3d42.236246171197195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f6260a723e029%3A0x733eb3e5e1f155fb!2sPraza%20do%20Berb%C3%A9s!5e0!3m2!1sen!2ses!4v1717770000002"
-          width="100%"
-          height="300"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
         <img
-          src="assets/images/berbes.jpg"
+          src={`${window.location.href}assets/images/berbes.png`}
           alt="Praza do Berbés"
           style={{ width: '100%', maxWidth: 600 }}
         />
@@ -79,18 +90,18 @@ export const VigoSkateCitySpots = () => {
 
       {/* Skatepark de Vialia */}
       <div>
-        <h3>Skatepark de Vialia</h3>
+        <h3>
+          <a
+            href="https://goo.gl/maps/cYPvvHeEMqThv3Tn8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Skatepark de Vialia
+          </a>
+        </h3>
         <p>Cozy medium-size park with sea views.</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.192011837487!2d-8.713712923765014!3d42.23871707119939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f626d1ff70a65%3A0x85e9b6e9f07e56db!2sVialia%20Centro%20Comercial%20Vigo!5e0!3m2!1sen!2ses!4v1717770000003"
-          width="100%"
-          height="300"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
         <img
-          src="assets/images/vialia.jpg"
+          src={`${window.location.href}assets/images/vialia.png`}
           alt="Skatepark de Vialia"
           style={{ width: '100%', maxWidth: 600 }}
         />
@@ -100,27 +111,64 @@ export const VigoSkateCitySpots = () => {
       <div>
         <h3>Downhills Galore</h3>
         <p>
-          This is Vigo: 10% flat. If you like downhills, this is your place. All
-          levels of insanity slopes.
+          Vigo is only 10% flat. If you're into downhills, this city is your
+          playground — from mellow to insane slopes.
         </p>
-        {[
-          'tCeTjvnD8uLEoZS97',
-          'tGXK33ZsvqMAq1tbA',
-          'ywsdcpLkZyDCS5qZ6',
-          'xEunnbVssMSQx55m9',
-        ].map((id, i) => (
-          <iframe
-            key={i}
-            src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d0!2d0!3d0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1splace_id:${id}!5e0!3m2!1sen!2ses!4v171777000000${4 + i}`}
-            width="100%"
-            height="300"
-            style={{ border: 0, marginBottom: 20 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-        ))}
+        <ul>
+          <li>
+            <a
+              href="https://goo.gl/maps/tCeTjvnD8uLEoZS97"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Spot 1 – Downhill peak
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://goo.gl/maps/tGXK33ZsvqMAq1tbA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Spot 2 – Steep challenge
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://goo.gl/maps/ywsdcpLkZyDCS5qZ6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Spot 3 – Scenic ride
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://goo.gl/maps/xEunnbVssMSQx55m9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Spot 4 – Speed zone
+            </a>
+          </li>
+        </ul>
         <img
-          src="assets/images/downhill.jpg"
+          src={`${window.location.href}assets/images/vianorte.png`}
+          alt="Downhill in Vigo"
+          style={{ width: '100%', maxWidth: 600 }}
+        />
+        <img
+          src={`${window.location.href}assets/images/granvia.png`}
+          alt="Downhill in Vigo"
+          style={{ width: '100%', maxWidth: 600 }}
+        />
+        <img
+          src={`${window.location.href}assets/images/urzaiz.png`}
+          alt="Downhill in Vigo"
+          style={{ width: '100%', maxWidth: 600 }}
+        />
+        <img
+          src={`${window.location.href}assets/images/spotGX.png`}
           alt="Downhill in Vigo"
           style={{ width: '100%', maxWidth: 600 }}
         />

@@ -15,6 +15,7 @@ import { VigoSkateCitySpots } from './VigoSkateCitySpots';
 import { RegistrationInfo } from './RegistrationInfo';
 import { EventSchedule } from './EventSchedule';
 import { ContestFlow } from './ContestFlow';
+import { WCSPrizeTable } from './WCSPrizeTable';
 
 const App = () => {
   const dataReversed = useContestsData();
@@ -23,7 +24,7 @@ const App = () => {
   return (
     <>
       <p>hey... how vigoes...?</p>
-      <h2>DON'T COME TO MARISQUIÑO 2025?</h2>
+      <h2>DON'T COME TO MARISQUIÑO 2025</h2>
       <p style={{ padding: '0 1rem' }}>
         <strong style={{ color: 'green', fontStyle: 'italic' }}>
           "Nice grinds, I will send you the invoice for the coping this year,
@@ -31,11 +32,14 @@ const App = () => {
         </strong>
         - Director congratulations to one (undisclosed) rider...
       </p>
+      <img src={`${window.location.href}assets/images/joke2.png`} />
       <div className="generaltext">{Intro()}</div>
       <div className="generaltext">{ContestData()}</div>
-      <div className="generaltext">{VigoSkateCitySpots()}</div>
       <div className="generaltext">{EventSchedule()}</div>
       <div className="generaltext">{ContestFlow()}</div>
+      <div className="generaltext">{WCSPrizeTable()}</div>
+
+      <div className="generaltext">{VigoSkateCitySpots()}</div>
       <h3>TUNES FOR TRAINING</h3>
       <div style={{ padding: '0 1rem' }}>
         <iframe

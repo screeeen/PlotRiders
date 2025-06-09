@@ -28,11 +28,15 @@ export const ContestFlow = () => {
       <h3>Women Street</h3>
       <ul>
         <li>
-          <strong>Semifinals (Saturday):</strong> All pre-qualification and
-          qualification riders
+          <strong>Qualifiers (Friday):</strong> All qualification riders
         </li>
         <li>
-          <strong>Finals (Sunday):</strong> 12 from semifinals
+          <strong>Semifinals (Saturday):</strong> 10 best from qualification +
+          20 WCS Top Riders
+        </li>
+        <li>
+          <strong>Finals (Sunday):</strong> 1 best from qualification + 12 from
+          semifinals
         </li>
       </ul>
 

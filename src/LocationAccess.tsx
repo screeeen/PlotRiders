@@ -36,6 +36,7 @@ export const LocationAccess = () => {
             >
               www.alsa.es
             </a>
+            Good for any destination from Spain
           </li>
           <li>
             <a
@@ -54,6 +55,7 @@ export const LocationAccess = () => {
             >
               www.autna.com
             </a>
+            Good for Porto Airport
           </li>
         </ul>
         <h3 style={{ fontStyle: 'italic' }}>AIRPLANES!</h3>
