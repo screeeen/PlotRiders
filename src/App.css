@@ -103,23 +103,23 @@ img {
 /* GENERAL TEXT */
 
 .generaltext {
-  padding: 2rem;
+  padding: 1rem 2rem;
   text-align: start;
 }
 
-ul {
+#donts ul {
   list-style-type: none;
   padding: 0;
 }
 
-li {
+#donts li {
   margin-bottom: 1rem;
   padding-left: 1rem;
   position: relative;
   line-height: 1.5;
 }
 
-li::before {
+#donts li::before {
   content: '✘';
   color: #f94f4f;
   font-weight: bold;
@@ -127,6 +127,16 @@ li::before {
   left: 0;
 }
 
-strong {
+#donts strong {
   color: #f94f4f;
+}
+
+#locationaccess ul {
+  list-style: none;
+}
+
+#locationaccess li {
+}
+
+#locationaccess strong {
 }
