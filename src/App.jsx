@@ -36,6 +36,19 @@ const App = () => {
       <div className="generaltext">{VigoSkateCitySpots()}</div>
       <div className="generaltext">{EventSchedule()}</div>
       <div className="generaltext">{ContestFlow()}</div>
+      <h3>TUNES FOR TRAINING</h3>
+      <div style={{ padding: '0 1rem' }}>
+        <iframe
+          style={{ borderRadius: '12px' }}
+          src="https://open.spotify.com/embed/playlist/1lNsofrysJlpn06AlhPTJn?utm_source=generator"
+          width="100%"
+          height="352"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          allowFullScreen
+        ></iframe>
+      </div>
       <div className="generaltext">{RegistrationInfo()}</div>
       <div className="gridStyle">
         <h2 className="title">O Marisquiño Kids!</h2>
