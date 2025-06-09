@@ -1,5 +1,6 @@
 import React from 'react';
 export const Intro = () => (
+  <p>"Nice grinds, I will send you the invoice for the coping this year, thank you" - The director to one (undisclosed) rider</p>
   <ul>
     <li>You shouldn't come to this championship.</li>
     <li>You really shouldn't celebrate the summer.</li>
