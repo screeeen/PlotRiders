@@ -1,19 +1,22 @@
 import React from 'react';
+import { samilMap } from './ContestData';
 
 export const LocationAccess = () => {
   const urlPic = `${window.location.href}assets/images/vigo_top.png`;
+  const urlPic2 = `${window.location.href}assets/images/marisco_spot.jpg`;
   return (
     <>
       <div id="locationaccess">
-        <h2>Location</h2>
         <img src={urlPic} />
         <h4>Distances:</h4>
         <ul>
           <li>Madrid: 580 kilometers.</li>
           <li>Barcelona: 1,100 kilometers.</li>
         </ul>
-
-        <h2>Access:</h2>
+        {samilMap()}
+        <br />
+        <img src={urlPic2} />
+        <h2>Ways you shouldn't choose to access to Vigo:</h2>
         <h3 style={{ fontStyle: 'italic' }}>TRAINS!</h3>
         <ul>
           <li>
@@ -26,7 +29,7 @@ export const LocationAccess = () => {
             </a>
           </li>
         </ul>
-        <h3 style={{ fontStyle: 'italic' }}>BUSES!</h3>
+        <h3 style={{ fontStyle: 'italic' }}>BUSES!!</h3>
         <ul>
           <li>
             <a
@@ -58,16 +61,18 @@ export const LocationAccess = () => {
             Good for Porto Airport
           </li>
         </ul>
-        <h3 style={{ fontStyle: 'italic' }}>AIRPLANES!</h3>
+        <h3 style={{ fontStyle: 'italic' }}>AIRPLANES!!!</h3>
         <ul>
           <li>
             <strong>Vigo Airport</strong>: city bus to the center (1.50 €), taxi
             (≈18 €).
           </li>
+          ---
           <li>
             <strong>Airport Santiago de Compostela</strong>: 85 km. Access by
             train & bus.
           </li>
+          ---
           <li>
             <strong>Airport Oporto (Portugal)</strong>: 150 km. Travelling by
             bus & train.
@@ -75,7 +80,8 @@ export const LocationAccess = () => {
         </ul>
 
         <h2>Accommodation</h2>
-        <h4>Hotels in town:</h4>
+        <p>will be updated soon with more entries...</p>
+        {/* <h4>Hotels in town:</h4>
         <ul>
           <li>Hotel Bahía de Vigo</li>
           <li>Hotel Carris</li>
@@ -92,7 +98,7 @@ export const LocationAccess = () => {
           <li>Hotel Bahía de Vigo</li>
           <li>Hotel AC Palacio Universal</li>
           <li>Hotel Axis</li>
-        </ul>
+        </ul> */}
 
         <h4>Hotels in the contest area (Samil beach):</h4>
         <ul>
@@ -105,6 +111,7 @@ export const LocationAccess = () => {
               Hotel Playa de Vigo
             </a>
           </li>
+          ---
           <li>
             <a
               href="https://www.hotelpsb.com/"
@@ -114,6 +121,7 @@ export const LocationAccess = () => {
               Hotel Santa Praia Bahia
             </a>
           </li>
+          ---
           <li>
             <strong>Camping Playa Samil</strong>
             <br />
@@ -134,6 +142,7 @@ export const LocationAccess = () => {
             <br />
             Mobile Homes with 2 rooms
           </li>
+          ---
           <li>
             <strong>Camping Canido (2km away)</strong>
             <br />

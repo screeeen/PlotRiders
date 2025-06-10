@@ -172,6 +172,66 @@ export const VigoSkateCitySpots = () => {
           alt="Downhill in Vigo"
           style={{ width: '100%', maxWidth: 600 }}
         />
+        <img
+          src={`${window.location.href}assets/images/spotGX2.png`}
+          alt="Downhill in Vigo"
+          style={{ width: '100%', maxWidth: 600 }}
+        />
+      </div>
+
+      {/* Video Section */}
+      <div style={{ marginTop: '3rem' }}>
+        <h2>Videos you shouldn't watch</h2>
+        <ul>
+          <li>
+            <strong>Crap 1</strong> –{' '}
+            <a
+              href="https://www.youtube.com/watch?v=TDcLiwhmaxU"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watch on YouTube
+            </a>
+          </li>
+          <li>
+            <strong>3CCDAYS #3 | Vigo · el patín - adidas</strong> –{' '}
+            <a
+              href="https://www.youtube.com/watch?v=kMLuY4Cyr5g"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watch on YouTube
+            </a>
+          </li>
+          <li>
+            <strong>weed-maps in vigo</strong> –{' '}
+            <a
+              href="https://www.skateboarding.com/magazine-archive/weedmaps-road-spannabis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Article
+            </a>{' '}
+            |{' '}
+            <a
+              href="https://www.youtube.com/watch?v=Cbhp6Pep9ek&t=40s"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Video on YouTube
+            </a>
+          </li>
+          <li>
+            <strong>GX1000 Vigo and Bilbao</strong> –{' '}
+            <a
+              href="https://www.youtube.com/watch?v=oEmsriUevCU"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watch on YouTube
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );

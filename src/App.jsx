@@ -35,13 +35,16 @@ const App = () => {
       <img src={`${window.location.href}assets/images/joke2.png`} />
       <div className="generaltext">{Intro()}</div>
       <div className="generaltext">{ContestData()}</div>
+      <h1>About this contest</h1>
+
+      <div className="generaltext">{WCSPrizeTable()}</div>
       <div className="generaltext">{EventSchedule()}</div>
       <div className="generaltext">{ContestFlow()}</div>
-      <div className="generaltext">{WCSPrizeTable()}</div>
 
       <div className="generaltext">{VigoSkateCitySpots()}</div>
-      <h3>TUNES FOR TRAINING</h3>
-      <div style={{ padding: '0 1rem' }}>
+
+      <h4>Tunes for the morning session</h4>
+      <div style={{ padding: '0 2rem' }}>
         <iframe
           style={{ borderRadius: '12px' }}
           src="https://open.spotify.com/embed/playlist/1lNsofrysJlpn06AlhPTJn?utm_source=generator"

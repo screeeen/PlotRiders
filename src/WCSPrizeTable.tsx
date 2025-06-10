@@ -30,7 +30,7 @@ export const WCSPrizeTable = () => {
 
   return (
     <div id="wcsprizetable">
-      <h2>WCS Prize Money</h2>
+      <h2>Prize Money that you can win if you are good at skateboarding</h2>
       {renderTable('WCS Street Men and Women', streetPrizes)}
       {renderTable('WCS Miniramp', minirampPrizes)}
     </div>

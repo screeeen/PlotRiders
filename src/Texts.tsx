@@ -28,7 +28,6 @@ export const Intro = () => (
         V.I.G.O.
       </li>
       <li>Of course, you shouldn't bomb hills in Vigo...</li>
-      <li>You shouldn't enjoy the best views of the city of Vigoes</li>
       <li>
         You shouldn't have fun at the event parties—a mix of small-town vibes
         with international visitors.

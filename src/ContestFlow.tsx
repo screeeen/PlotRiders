@@ -6,6 +6,7 @@ export const ContestFlow = () => {
       <h2>Contest Flow</h2>
 
       <h3>Men Street</h3>
+      <p>(circa 180 skaters + 30 pre seeded riders)</p>
       <ul>
         <li>
           <strong>Pre-qualifiers (Thursday):</strong> All pre-qualification
@@ -25,7 +26,8 @@ export const ContestFlow = () => {
         </li>
       </ul>
 
-      <h3>Women Street</h3>
+      <h3>Women Street </h3>
+      <p>(40 circa skaters + 15 pre seeded riders)</p>
       <ul>
         <li>
           <strong>Qualifiers (Friday):</strong> All qualification riders
@@ -41,6 +43,7 @@ export const ContestFlow = () => {
       </ul>
 
       <h3>Miniramp</h3>
+      <p>(circa 80 skaters + 15 pre seeded riders)</p>
       <ul>
         <li>
           <strong>Qualifiers (Friday):</strong> All pre-qualification and
