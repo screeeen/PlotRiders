@@ -3,6 +3,7 @@
   text-align: center;
   width: 100vw;
   box-sizing: border-box;
+  background: white;
   /* background: linear-gradient(
     to bottom,
 
@@ -93,7 +94,7 @@
   color: black;
 }
 
-#portraits img {
+#portraits {
   height: 85%;
   width: 70%;
   filter: grayscale(100%) drop-shadow(2px 2px 0px black);

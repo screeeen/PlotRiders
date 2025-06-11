@@ -13,7 +13,7 @@ export const VigoSkateCitySpots = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Pza de la Estrella
+            Praza da Estrela
           </a>
         </h3>
         <p>
@@ -34,7 +34,7 @@ export const VigoSkateCitySpots = () => {
         />
       </div>
 
-      {/* Náutico y Berbés */}
+      {/* Náutico  */}
       <div>
         <h3>
           <a
@@ -42,7 +42,7 @@ export const VigoSkateCitySpots = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Náutico y Berbés
+            Náutico
           </a>
         </h3>
         <p>Blocks, stairs, infinite ledges... marble</p>
@@ -89,7 +89,7 @@ export const VigoSkateCitySpots = () => {
       </div>
 
       {/* Skatepark de Vialia */}
-      <div>
+      {/* <div>
         <h3>
           <a
             href="https://goo.gl/maps/cYPvvHeEMqThv3Tn8"
@@ -105,7 +105,7 @@ export const VigoSkateCitySpots = () => {
           alt="Skatepark de Vialia"
           style={{ width: '100%', maxWidth: 600 }}
         />
-      </div>
+      </div> */}
 
       {/* Downhills Galore */}
       <div>
@@ -183,7 +183,7 @@ export const VigoSkateCitySpots = () => {
       <div style={{ marginTop: '3rem' }}>
         <h2>Videos you shouldn't watch</h2>
         <ul>
-          <li>
+          {/* <li>
             <strong>Crap 1</strong> –{' '}
             <a
               href="https://www.youtube.com/watch?v=TDcLiwhmaxU"
@@ -192,9 +192,9 @@ export const VigoSkateCitySpots = () => {
             >
               Watch on YouTube
             </a>
-          </li>
+          </li> */}
           <li>
-            <strong>3CCDAYS #3 | Vigo · el patín - adidas</strong> –{' '}
+            <strong>3CCDAYS #3 | Vigo · el patín - adidas (2017)</strong> –{' '}
             <a
               href="https://www.youtube.com/watch?v=kMLuY4Cyr5g"
               target="_blank"
@@ -204,7 +204,7 @@ export const VigoSkateCitySpots = () => {
             </a>
           </li>
           <li>
-            <strong>weed-maps in vigo</strong> –{' '}
+            <strong>weed-maps in vigo (2017)</strong> –{' '}
             <a
               href="https://www.skateboarding.com/magazine-archive/weedmaps-road-spannabis"
               target="_blank"
@@ -218,11 +218,11 @@ export const VigoSkateCitySpots = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Video on YouTube
+              Watch on YouTube
             </a>
           </li>
           <li>
-            <strong>GX1000 Vigo and Bilbao</strong> –{' '}
+            <strong>GX1000 Vigo and Bilbao (2024)</strong> –{' '}
             <a
               href="https://www.youtube.com/watch?v=oEmsriUevCU"
               target="_blank"

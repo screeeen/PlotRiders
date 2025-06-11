@@ -123,35 +123,22 @@ export const LocationAccess = () => {
           </li>
           ---
           <li>
-            <strong>Camping Playa Samil</strong>
-            <br />
-            Tel: +34 683.584.748
-            <br />
-            Email:{' '}
-            <a href="mailto:info@campingplayasamil.com">
-              info@campingplayasamil.com
-            </a>
-            <br />
             <a
               href="https://www.campingplayasamil.com/galeria.php"
               target="_blank"
               rel="noopener noreferrer"
             >
-              www.campingplayasamil.com
+              Camping Playa Samil
             </a>
-            <br />
-            Mobile Homes with 2 rooms
           </li>
           ---
           <li>
-            <strong>Camping Canido (2km away)</strong>
-            <br />
             <a
               href="https://www.ondasdecanido.es/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              www.ondasdecanido.es
+              Camping Canido (2km away)
             </a>
           </li>
         </ul>
