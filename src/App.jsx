@@ -7,8 +7,6 @@ import {
 } from './CONSTANTS';
 import { useContestsData } from './useContestsData';
 import { makeCell } from './App.utils';
-
-import './App.css';
 import { Intro } from './Texts';
 import { ContestData } from './ContestData';
 import { VigoSkateCitySpots } from './VigoSkateCitySpots';
@@ -16,6 +14,8 @@ import { RegistrationInfo } from './RegistrationInfo';
 import { EventSchedule } from './EventSchedule';
 import { ContestFlow } from './ContestFlow';
 import { WCSPrizeTable } from './WCSPrizeTable';
+
+import './App.css';
 
 const App = () => {
   const dataReversed = useContestsData();
@@ -33,30 +33,14 @@ const App = () => {
         - Director congratulations to one (undisclosed) rider...
       </p>
       <img src={`${window.location.href}assets/images/joke2.png`} />
-      <div className="generaltext">{Intro()}</div>
       <div className="generaltext">{ContestData()}</div>
-      <h1>About this contest</h1>
 
+      <h1>About this contest</h1>
       <div className="generaltext">{WCSPrizeTable()}</div>
       <div className="generaltext">{EventSchedule()}</div>
       <div className="generaltext">{ContestFlow()}</div>
-
-      <div className="generaltext">{VigoSkateCitySpots()}</div>
-
-      <h4>Tunes for the morning session</h4>
-      <div style={{ padding: '0 2rem' }}>
-        <iframe
-          style={{ borderRadius: '12px' }}
-          src="https://open.spotify.com/embed/playlist/1lNsofrysJlpn06AlhPTJn?utm_source=generator"
-          width="100%"
-          height="352"
-          frameBorder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-          allowFullScreen
-        ></iframe>
-      </div>
       <div className="generaltext">{RegistrationInfo()}</div>
+
       <div className="gridStyle">
         <h2 className="title">O Marisquiño Kids!</h2>
         <h2 className="categoryTitle adaptiveTitle">Adaptive! (2024!)</h2>
@@ -127,11 +111,27 @@ const App = () => {
           ))}
         </div>
       </div>
-      <p style={{ padding: '0 1rem' }}>
+      {/* <p style={{ padding: '0 1rem' }}>
         <strong style={{ color: 'violet', fontStyle: 'italic' }}>
           We aren't the champaign of skateboarding, but we have oysters...
         </strong>
-      </p>
+      </p> */}
+      <div className="generaltext">{VigoSkateCitySpots()}</div>
+      <h4>Tunes for the morning session</h4>
+      <div style={{ padding: '0 2rem' }}>
+        <iframe
+          style={{ borderRadius: '12px' }}
+          src="https://open.spotify.com/embed/playlist/1lNsofrysJlpn06AlhPTJn?utm_source=generator"
+          width="100%"
+          height="352"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <h1>Why you shouldn't come... some more reasons</h1>
+      <div className="generaltext">{Intro()}</div>
     </>
   );
 };

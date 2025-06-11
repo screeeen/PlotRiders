@@ -1,6 +1,21 @@
 import React from 'react';
 
 export const EventSchedule = () => {
+  const highlightedEvents = [
+    'Open Street Men Pre-Qualifiers',
+    'Open Miniramp Qualifiers',
+    'Adaptive Competition',
+    'Open Women Street Qualifiers',
+    'Miniramp Semifinal',
+    'Open Women Street Semifinal',
+    'Men Street Semifinal',
+    'Open Street Men Qualifiers',
+    'Women Street Final',
+    'Men Street Final',
+    'Miniramp - Cash for Tricks!',
+    'Miniramp Final',
+  ];
+
   const schedule = [
     {
       day: 'Thursday 7th August',
@@ -62,10 +77,15 @@ export const EventSchedule = () => {
     <div id="eventschedule">
       <h2>Event Schedule</h2>
       <table
-        style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}
+        style={{
+          width: '100%',
+          borderCollapse: 'collapse',
+          marginTop: '1rem',
+          fontSize: '.8rem',
+        }}
       >
         <thead>
-          <tr style={{ backgroundColor: '#eee' }}>
+          <tr style={{ backgroundColor: '#000', color: '#fff' }}>
             <th style={{ border: '1px solid #ccc', padding: '0.5rem' }}>Day</th>
             <th style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
               Time
@@ -77,19 +97,29 @@ export const EventSchedule = () => {
         </thead>
         <tbody>
           {schedule.map(({ day, events }) =>
-            events.map(([time, event], idx) => (
-              <tr key={`${day}-${idx}`}>
-                <td style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
-                  {idx === 0 ? <strong>{day}</strong> : ''}
-                </td>
-                <td style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
-                  {time}
-                </td>
-                <td style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
-                  {event}
-                </td>
-              </tr>
-            ))
+            events.map(([time, event], idx) => {
+              const isHighlighted = highlightedEvents.includes(event);
+              const rowStyle = isHighlighted
+                ? {
+                    backgroundColor: 'yellow',
+                    color: 'black',
+                    fontWeight: 'bold',
+                  }
+                : {};
+              return (
+                <tr key={`${day}-${idx}`} style={rowStyle}>
+                  <td style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+                    {idx === 0 ? <strong>{day}</strong> : ''}
+                  </td>
+                  <td style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+                    {time}
+                  </td>
+                  <td style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+                    {event}
+                  </td>
+                </tr>
+              );
+            })
           )}
         </tbody>
       </table>
