@@ -24,6 +24,10 @@ export const LocationAccess = () => {
     <>
       <div id="locationaccess">
         <img src={urlPic} />
+        <ul style={{ background: 'white', color: 'black', padding: '1rem' }}>
+          <li>Madrid: 580 kilometers.</li>
+          <li>Barcelona: 1,100 kilometers.</li>
+        </ul>
         <img src={urlPista1} />
         <img src={urlPista2} />
         <img src={urlPic2} />
@@ -43,11 +47,7 @@ export const LocationAccess = () => {
         <img src={urlBlur5} />
         <img src={urlBlur6} />
         <img src={urlBlur7} />
-        <h1>It is this far...</h1>
-        <ul style={{ background: 'white', color: 'black', padding: '1rem' }}>
-          <li>Madrid: 580 kilometers.</li>
-          <li>Barcelona: 1,100 kilometers.</li>
-        </ul>
+
         {samilMap()}
         <br />
         <h2>Ways you shouldn't choose to access to Vigo:</h2>
