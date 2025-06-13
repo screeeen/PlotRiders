@@ -75,7 +75,7 @@ export const EventSchedule = () => {
 
   return (
     <div id="eventschedule">
-      <h2>Event Schedule</h2>
+      <h2>not the schedule</h2>
       <table
         style={{
           width: '100%',
@@ -84,7 +84,7 @@ export const EventSchedule = () => {
           fontSize: '.8rem',
         }}
       >
-        <thead>
+        {/* <thead>
           <tr style={{ backgroundColor: '#000', color: '#fff' }}>
             <th style={{ border: '1px solid #ccc', padding: '0.5rem' }}>Day</th>
             <th style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
@@ -94,7 +94,7 @@ export const EventSchedule = () => {
               Event
             </th>
           </tr>
-        </thead>
+        </thead> */}
         <tbody>
           {schedule.map(({ day, events }) =>
             events.map(([time, event], idx) => {
@@ -108,13 +108,19 @@ export const EventSchedule = () => {
                 : {};
               return (
                 <tr key={`${day}-${idx}`} style={rowStyle}>
-                  <td style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+                  <td
+                    style={{ border: '1px solid #eeeeeeee', padding: '0.5rem' }}
+                  >
                     {idx === 0 ? <strong>{day}</strong> : ''}
                   </td>
-                  <td style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+                  <td
+                    style={{ border: '1px solid #eeeeeeee', padding: '0.5rem' }}
+                  >
                     {time}
                   </td>
-                  <td style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+                  <td
+                    style={{ border: '1px solid #eeeeeeee', padding: '0.5rem' }}
+                  >
                     {event}
                   </td>
                 </tr>
@@ -123,6 +129,10 @@ export const EventSchedule = () => {
           )}
         </tbody>
       </table>
+      <h3 style={{ color: 'gray' }}>
+        as always with the great thrill and emotions that brings the weather
+        forecast changes...
+      </h3>
     </div>
   );
 };

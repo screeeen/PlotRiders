@@ -3,7 +3,7 @@ import React from 'react';
 export const RegistrationInfo = () => {
   return (
     <div id="registrationinfo">
-      <h2>Registration Info</h2>
+      <h1>don't register</h1>
 
       <p>
         All entries received will be evaluated and selected according to the
@@ -31,7 +31,7 @@ export const RegistrationInfo = () => {
         <li>Miniramp: 30€</li>
       </ul>
 
-      <h3>Onsite Registration</h3>
+      <h3>onsite registration</h3>
       <p>
         <strong>@ Museo Verbum</strong>
         <br />

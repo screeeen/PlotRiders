@@ -1,5 +1,8 @@
 import React from 'react';
 import { samilMap } from './ContestData';
+import { SpotifyColumns } from './SpotifyColumns';
+import SpotifyIframe from './SpotifyIframe';
+import SpotifyIframe2 from './SpotifyIframe2';
 
 export const LocationAccess = () => {
   const urlPic = `${window.location.href}assets/images/vigo_top.png`;
@@ -24,14 +27,30 @@ export const LocationAccess = () => {
     <>
       <div id="locationaccess">
         <img src={urlPic} />
-        <ul style={{ background: 'white', color: 'black', padding: '1rem' }}>
-          <li>Madrid: 580 kilometers.</li>
-          <li>Barcelona: 1,100 kilometers.</li>
+        <ul
+          style={{
+            background: 'white',
+            color: 'black',
+            padding: '1rem',
+            textAlign: 'center',
+          }}
+        >
+          <li>Madrid: 580 kilometers</li>
+          <li>Barcelona: 1100 kilometers</li>
         </ul>
         <img src={urlPista1} />
         <img src={urlPista2} />
         <img src={urlPic2} />
-        <h1>Because there's no vibes...</h1>
+        <h1>nobody skates...</h1>
+        {/* <img src={urlBlur2} /> */}
+        <img src={urlBlur3} />
+        <img src={urlBlur4} />
+        {/* <img src={urlBlur1} /> */}
+        <img src={urlBlur5} />
+        <img src={urlBlur7} />
+        <img src={urlBlur6} />
+        <h1>there's no vibes...</h1>
+        <SpotifyIframe2 />
         <img src={urlPuesta2} />
         {/* <img src={urlPuesta3} /> */}
         <img src={urlPuesta7} />
@@ -39,19 +58,12 @@ export const LocationAccess = () => {
         <img src={urlPuesta5} />
         <img src={urlPuesta4} />
         <img src={urlPuesta1} />
-        <h1>And no spanish skateboarding sessions at all</h1>
-        {/* <img src={urlBlur2} /> */}
-        <img src={urlBlur3} />
-        <img src={urlBlur4} />
-        <img src={urlBlur1} />
-        <img src={urlBlur5} />
-        <img src={urlBlur6} />
-        <img src={urlBlur7} />
-
+        <h2>said that...</h2>
+        <h1>this is not the location</h1>
         {samilMap()}
         <br />
-        <h2>Ways you shouldn't choose to access to Vigo:</h2>
-        <h3 style={{ fontStyle: 'italic' }}>TRAINS!</h3>
+        <h1>don't travel</h1>
+        <h2 style={{ fontStyle: 'italic' }}>TRAINS!</h2>
         <ul>
           <li>
             <a
@@ -71,7 +83,7 @@ export const LocationAccess = () => {
           </li>
         </ul>
 
-        <h3 style={{ fontStyle: 'italic' }}>BUSES!!</h3>
+        <h2 style={{ fontStyle: 'italic' }}>BUSES!!</h2>
         <ul>
           <li>
             <a
@@ -124,7 +136,7 @@ export const LocationAccess = () => {
           </li>
         </ul>
 
-        <h3 style={{ fontStyle: 'italic' }}>AIRPLANES!!!</h3>
+        <h2 style={{ fontStyle: 'italic' }}>AIRPLANES!!!</h2>
         <ul>
           <li>
             <strong>Vigo Airport (VGO)</strong>: national flights with Iberia,
@@ -153,8 +165,7 @@ export const LocationAccess = () => {
           </li>
         </ul>
 
-        <h2>Don't plan the accommodation, don't come</h2>
-        <p>will be updated soon with more entries...</p>
+        <h1>don't sleep</h1>
         <h4>Hotels in town:</h4>
         <ul>
           <li>
@@ -228,7 +239,6 @@ export const LocationAccess = () => {
           <li>Hotel AC Palacio Universal</li>
           <li>Hotel Axis</li>*/}
         </ul>
-
         <h4>Hotels in the contest area (Samil beach):</h4>
         <ul>
           <li>

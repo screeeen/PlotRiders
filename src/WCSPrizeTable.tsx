@@ -7,15 +7,16 @@ export const WCSPrizeTable = () => {
   const renderTable = (title, prizes) => (
     <div style={{ marginBottom: '2rem' }}>
       <h3>{title}</h3>
+
       <table
         style={{ width: '100%', maxWidth: 400, borderCollapse: 'collapse' }}
       >
-        <thead>
+        {/* <thead>
           <tr style={{ backgroundColor: '#000' }}>
             <th style={{ padding: '0.5rem' }}>Position</th>
             <th style={{ padding: '0.5rem' }}>Prize</th>
           </tr>
-        </thead>
+        </thead> */}
         <tbody>
           {prizes.map((amount, index) => (
             <tr key={index}>
@@ -32,8 +33,11 @@ export const WCSPrizeTable = () => {
 
   return (
     <div id="wcsprizetable">
+      <h2 style={{ textAlign: 'left' }}>
+        €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+        that you can win (if you are good at skateboarding)
+      </h2>
       <img src={urlPrices} />
-      <h2>Prize Money that you can win if you are good at skateboarding</h2>
       {renderTable('WCS Street Men and Women', streetPrizes)}
       {renderTable('WCS Miniramp', minirampPrizes)}
     </div>

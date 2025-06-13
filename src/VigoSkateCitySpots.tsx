@@ -3,7 +3,8 @@ import React from 'react';
 export const VigoSkateCitySpots = () => {
   return (
     <div id="vigoskatecityspots">
-      <h2>Vigo Skate City Spots and Some Geek Notes (and shitty pictures)</h2>
+      {/* <h2>Vigo Skate City Spots and Some Geek Notes (and shitty pictures)</h2> */}
+      <h2>very small and cryptic list of vigo spots</h2>
 
       {/* Pza de la Estrella */}
       <div>
@@ -16,7 +17,7 @@ export const VigoSkateCitySpots = () => {
             Praza da Estrela
           </a>
         </h3>
-        <p>
+        {/* <p>
           Classic street spot known for appearing in skate videos for over two
           decades. Salabanzi may have been the first to hit it in Flip’s{' '}
           <em>Sorry</em>. Suciu, Silvas, Milou… all showed up in the latest
@@ -31,7 +32,7 @@ export const VigoSkateCitySpots = () => {
           src={`${window.location.href}assets/images/estrella2.png`}
           alt="Pza de la Estrella"
           style={{ width: '100%', maxWidth: 600 }}
-        />
+        /> */}
       </div>
 
       {/* Náutico  */}
@@ -45,7 +46,7 @@ export const VigoSkateCitySpots = () => {
             Náutico
           </a>
         </h3>
-        <p>Blocks, stairs, infinite ledges... marble</p>
+        {/* <p>Blocks, stairs, infinite ledges... marble</p>
         <img
           src={`${window.location.href}assets/images/nautico.png`}
           alt="Náutico y Berbés"
@@ -55,7 +56,7 @@ export const VigoSkateCitySpots = () => {
           src={`${window.location.href}assets/images/bahia.jpg`}
           alt="Náutico y Berbés"
           style={{ width: '100%', maxWidth: 600 }}
-        />
+        /> */}
       </div>
 
       {/* Praza do Berbés */}
@@ -70,8 +71,8 @@ export const VigoSkateCitySpots = () => {
           </a>
         </h3>
         <p>
-          9 stairs and ledges. A classic evening jam spot. Levi Brown flipped
-          the roundabout sculpture more than a decade ago — featured on a{' '}
+          {/* 9 stairs and ledges. A classic evening jam spot. Levi Brown flipped
+          the roundabout sculpture more than a decade ago — featured on a{' '} */}
           <a
             href="https://www.skateboarding.com/features/hot-off-the-press-levi-brown-december-2011"
             target="_blank"
@@ -79,13 +80,12 @@ export const VigoSkateCitySpots = () => {
           >
             Transworld cover
           </a>
-          .
         </p>
-        <img
+        {/* <img
           src={`${window.location.href}assets/images/berbes.png`}
           alt="Praza do Berbés"
           style={{ width: '100%', maxWidth: 600 }}
-        />
+        /> */}
       </div>
 
       {/* Skatepark de Vialia */}
@@ -109,11 +109,16 @@ export const VigoSkateCitySpots = () => {
 
       {/* Downhills Galore */}
       <div>
-        <h3>Downhills Galore</h3>
-        <p>
+        <h3>downhills</h3>
+        <p style={{ fontStyle: 'italic' }}>
+          {' '}
+          "...just got to Vigo and slammed hard"
+        </p>
+        - (undisclosed) coach from Netherlands
+        {/* <p>
           Vigo is only 10% flat. If you're into downhills, this city is your
           playground — from mellow to insane slopes.
-        </p>
+        </p> */}
         <ul>
           <li>
             <a
