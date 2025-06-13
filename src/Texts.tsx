@@ -8,7 +8,6 @@ export const Intro = () => (
         contest.
       </li>
       <li>You really shouldn't celebrate the summer.</li>
-      <li>You shouldn't travel.</li>
       <li>You shouldn't come to Vigo.</li>
       <li>
         You shouldn't come to the best place in the world in summer. That is...

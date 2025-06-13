@@ -3,7 +3,7 @@ import React from 'react';
 export const RegistrationInfo = () => {
   return (
     <div id="registrationinfo">
-      <h1>don't register</h1>
+      <h1>don't register!!</h1>
 
       <p>
         All entries received will be evaluated and selected according to the

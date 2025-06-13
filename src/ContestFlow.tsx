@@ -74,7 +74,7 @@ export const ContestFlow = () => {
         <p style={{ fontStyle: 'italic' }}> -"si pestañeas.... 👀"</p>
       </ul>
 
-      <h2>dee jays that probably might accept our work conditions</h2>
+      <h2>dee jays that probably might accept work with us</h2>
       <ul>
         <li>
           <strong>Meteoro:</strong> Classic Rock, Skate Punk, Hip Hop, Exotica
@@ -97,7 +97,7 @@ export const ContestFlow = () => {
         <li>Alex Braza</li>
         <li>Pat Duffy</li>
       </ul>
-      <h2>staff meadia with uncharged batteries</h2>
+      <h2>staff media with after party batteries 100%</h2>
       <ul>
         <li>Raisa Abal</li>
         <li>Gochi Estrella</li>
