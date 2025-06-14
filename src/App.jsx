@@ -13,7 +13,6 @@ import './App.css';
 const App = () => {
   return (
     <>
-      <h1>hey you</h1>
       <p>hey... how vigoes...?</p>
       <h2>DON'T COME TO MARISQUIÑO 2025</h2>
       <p>(your coach will be proud!)</p>
