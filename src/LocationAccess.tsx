@@ -170,28 +170,6 @@ export const LocationAccess = () => {
         <ul>
           <li>
             <a
-              href="https://www.hotelbahiadevigo.com/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Hotel Bahía de Vigo
-            </a>
-            A classic, 70s made, style for miles...
-          </li>
-
-          <li>
-            <a
-              href="https://www.hostalcasadominguez.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Hostal Casa Domínguez
-            </a>
-            <br />
-            Simple and central, close to train and bus station.
-          </li>
-          <li>
-            <a
               href="https://www.hostalpereiravigo.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -214,6 +192,17 @@ export const LocationAccess = () => {
           </li>
           <li>
             <a
+              href="https://www.hostalcasadominguez.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hostal Casa Domínguez
+            </a>
+            <br />
+            Simple and central, close to train and bus station.
+          </li>
+          <li>
+            <a
               href="https://www.bedandbreakfast.eu/en/a/6250865/hostal-ancla-dorada/"
               target="_blank"
               rel="noopener noreferrer"
@@ -222,6 +211,16 @@ export const LocationAccess = () => {
             </a>
             <br />
             Clean, low-cost rooms next to the train station.
+          </li>
+          <li>
+            <a
+              href="https://www.hotelbahiadevigo.com/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hotel Bahía de Vigo
+            </a>
+            <br />A classic, 70s made, style for miles...
           </li>
 
           {/* <li>Hotel Carris</li>
