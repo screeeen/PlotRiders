@@ -172,11 +172,11 @@ img {
 
 h1:nth-child(6n + 1),
 h2:nth-child(6n + 1) {
-  transform: rotate(-10deg);
+  transform: rotate(-2deg);
 }
 h1:nth-child(6n + 2),
 h2:nth-child(6n + 2) {
-  transform: rotate(-6deg);
+  transform: rotate(-1deg);
 }
 h1:nth-child(6n + 3),
 h2:nth-child(6n + 3) {
@@ -184,7 +184,7 @@ h2:nth-child(6n + 3) {
 }
 h1:nth-child(6n + 4),
 h2:nth-child(6n + 4) {
-  transform: rotate(6deg);
+  transform: rotate(2deg);
 }
 h1:nth-child(6n + 5),
 h2:nth-child(6n + 5) {
@@ -192,7 +192,7 @@ h2:nth-child(6n + 5) {
 }
 h1:nth-child(6n),
 h2:nth-child(6n) {
-  transform: rotate(8deg);
+  transform: rotate(3deg);
 }
 
 .kitch-star-css {
@@ -202,7 +202,7 @@ h2:nth-child(6n) {
   justify-content: flex-start;
   gap: 1rem;
   width: fit-content;
-  animation: kitch-pop 1.2s cubic-bezier(.68,-0.55,.27,1.55) 1;
+  animation: kitch-pop 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
 }
 .star-shape {
   width: 56px;
@@ -220,9 +220,11 @@ h2:nth-child(6n) {
     2% 35%,
     39% 35%
   );
-  box-shadow: 0 0 18px 3px #ffe600, 0 2px 12px 0 #bba800;
+  box-shadow:
+    0 0 18px 3px #ffe600,
+    0 2px 12px 0 #bba800;
   position: relative;
-  animation: kitch-star-spin 2.5s cubic-bezier(.68,-0.55,.27,1.55) 1;
+  animation: kitch-star-spin 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1;
 }
 .star-text {
   font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
@@ -231,21 +233,40 @@ h2:nth-child(6n) {
   background: #ff69b4;
   border-radius: 1.2em 0.8em 1.2em 0.8em/1em 1.2em 0.8em 1.2em;
   padding: 0.4em 1.2em;
-  box-shadow: 0 2px 8px #ffb6e6, 0 0 0 4px #fffbe7;
+  box-shadow:
+    0 2px 8px #ffb6e6,
+    0 0 0 4px #fffbe7;
   border: 2px dashed #fffbe7;
   margin-left: 0.2em;
   transform: rotate(-6deg);
   letter-spacing: 0.04em;
   font-weight: bold;
-  text-shadow: 1px 2px 0 #c90076, 0 0 6px #fffbe7;
+  text-shadow:
+    1px 2px 0 #c90076,
+    0 0 6px #fffbe7;
 }
 @keyframes kitch-pop {
-  0% { transform: scale(0.7) rotate(-12deg); opacity: 0; }
-  60% { transform: scale(1.15) rotate(8deg); opacity: 1; }
-  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  0% {
+    transform: scale(0.7) rotate(-2deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15) rotate(4deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(1deg);
+    opacity: 1;
+  }
 }
 @keyframes kitch-star-spin {
-  0% { transform: rotate(-30deg) scale(0.7); }
-  60% { transform: rotate(18deg) scale(1.15); }
-  100% { transform: rotate(0deg) scale(1); }
+  0% {
+    transform: rotate(-8deg) scale(0.7);
+  }
+  60% {
+    transform: rotate(4deg) scale(1.15);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
 }
