@@ -9,19 +9,18 @@ import { WCSPrizeTable } from './WCSPrizeTable';
 import { Winners } from './Winners';
 
 import './App.css';
-import KitschStar from './KitschStar';
+import KitschStar from './KitschStar.tsx';
 
 const App = () => {
   return (
     <>
       <KitschStar />
-      <p>hey... how vigoes...?</p>
+      {/* <p>hey... how vigoes...?</p> */}
       <h2>DON'T COME TO MARISQUIÑO 2025</h2>
-      <p>(your coach will be proud!)</p>
+      <h3>(your coach will be proud!)</h3>
       <p style={{ padding: '0 1rem' }}>
         <strong style={{ color: 'green', fontStyle: 'italic' }}>
-          "Nice grinds, I will send you the invoice for the coping this year,
-          thank you"
+          "Nice grinds! I will send you the invoice for the coping, thank you"
         </strong>
         - Director congratulations to one (undisclosed) rider...
       </p>
