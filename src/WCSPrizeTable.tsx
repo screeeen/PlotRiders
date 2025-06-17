@@ -9,7 +9,11 @@ export const WCSPrizeTable = () => {
       <h3>{title}</h3>
 
       <table
-        style={{ width: '100%', maxWidth: 400, borderCollapse: 'collapse' }}
+        style={{
+          width: '100%',
+          // maxWidth: 400,
+          borderCollapse: 'collapse',
+        }}
       >
         {/* <thead>
           <tr style={{ backgroundColor: '#000' }}>
@@ -17,7 +21,14 @@ export const WCSPrizeTable = () => {
             <th style={{ padding: '0.5rem' }}>Prize</th>
           </tr>
         </thead> */}
-        <tbody>
+        <tbody
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            // justifyContent: 'end',
+            alignItems: 'end',
+          }}
+        >
           {prizes.map((amount, index) => (
             <tr key={index}>
               <td style={{ padding: '0.5rem' }}>{index + 1}º</td>
