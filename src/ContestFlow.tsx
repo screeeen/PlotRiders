@@ -89,7 +89,7 @@ export const ContestFlow = () => {
         </li>
       </ul>
 
-      <h2>judges that might appear on time</h2>
+      <h2>judges with sore eyeballs</h2>
       <ul>
         <li>Iztok Sumatic(Head Judge)</li>
         <li>Alain Goikoetxea</li>
