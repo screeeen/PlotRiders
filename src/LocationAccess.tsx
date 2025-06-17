@@ -170,7 +170,7 @@ export const LocationAccess = () => {
         <h1>don't sleep</h1>
         <h4>Hotels in town:</h4>
         <ul>
-          <li>
+          {/* <li>
             <a
               href="https://www.hostalpereiravigo.com/"
               target="_blank"
@@ -180,10 +180,10 @@ export const LocationAccess = () => {
             </a>
             <br />
             Budget stay, walking distance to the old town.
-          </li>
+          </li> */}
           <li>
             <a
-              href="https://www.hotelogalia.com/"
+              href="https://www.hotelogalia.es/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -192,7 +192,7 @@ export const LocationAccess = () => {
             <br />
             Affordable and well-located downtown hotel.
           </li>
-          <li>
+          {/* <li>
             <a
               href="https://www.hostalcasadominguez.com/"
               target="_blank"
@@ -202,10 +202,10 @@ export const LocationAccess = () => {
             </a>
             <br />
             Simple and central, close to train and bus station.
-          </li>
+          </li> */}
           <li>
             <a
-              href="https://www.bedandbreakfast.eu/en/a/6250865/hostal-ancla-dorada/"
+              href="https://www.ancladorada.com"
               target="_blank"
               rel="noopener noreferrer"
             >
