@@ -8,11 +8,11 @@ export const Skatepark = () => {
 
   return (
     <div id="imageshowcase">
-      <h1>playground</h1>
+      <h1>scooter area</h1>
       <p>
-        Lots of mysteries on this park, still don't know how it will go. It will
-        have stones, the classic rainbow for those lazy asses who dont want to
-        ollie.
+        Lots of mysteries on this park, still unfinished, short and late. It
+        will have stones, the classic rainbow for those lazy asses who dont want
+        to ollie.
       </p>
       <div
         style={{
