@@ -18,8 +18,8 @@ const App = () => {
     <>
       <KitschStar />
       {/* <p>hey... how vigoes...?</p> */}
-      <h1>DON'T COME</h1>
-      <h1 className="animate__animated animate__hinge"> TO MARISQUIÑO 2025</h1>
+      <h2>DON'T COME TO MARISQUIÑO 2025</h2>
+      <h2 className="animate__animated animate__hinge">SUPER CONTEST!</h2>
       <h3>(your coach will be proud!)</h3>
       <p style={{ padding: '0 1rem' }}>
         <strong style={{ color: 'green', fontStyle: 'italic' }}>
