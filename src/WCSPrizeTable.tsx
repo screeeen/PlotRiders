@@ -5,34 +5,34 @@ export const WCSPrizeTable = () => {
   const minirampPrizes = [2000, 1000, 500, 250, 150];
 
   const renderTable = (title, prizes) => (
-    <div style={{ marginBottom: '2rem' }}>
-      <h3>{title}</h3>
-
-      <table
+    <div style={{ margin: '1rem', flex: '1 1' }}>
+      <h3
         style={{
-          width: '100%',
-          // maxWidth: 400,
-          borderCollapse: 'collapse',
+          display: 'flex',
+          alignItems: 'end',
+          justifyContent: 'flex-end',
+          height: '4rem',
         }}
       >
-        {/* <thead>
-          <tr style={{ backgroundColor: '#000' }}>
-            <th style={{ padding: '0.5rem' }}>Position</th>
-            <th style={{ padding: '0.5rem' }}>Prize</th>
-          </tr>
-        </thead> */}
-        <tbody
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            // justifyContent: 'end',
-            alignItems: 'end',
-          }}
-        >
+        {title}
+      </h3>
+      <table
+        style={{
+          borderCollapse: 'collapse',
+          width: '100%',
+          // maxWidth: 400,
+          margin: '0 auto',
+        }}
+      >
+        <tbody>
           {prizes.map((amount, index) => (
             <tr key={index}>
-              <td style={{ padding: '0.5rem' }}>{index + 1}º</td>
-              <td style={{ padding: '0.5rem' }}>{amount}€</td>
+              <td style={{ padding: '0.5rem', textAlign: 'right' }}>
+                {index + 1}º
+              </td>
+              <td style={{ padding: '0.5rem', textAlign: 'left' }}>
+                {amount}€
+              </td>
             </tr>
           ))}
         </tbody>
@@ -43,14 +43,24 @@ export const WCSPrizeTable = () => {
   const urlPrices = `${window.location.href}assets/promoimages/prizes.jpg`;
 
   return (
-    <div id="wcsprizetable">
-      <h2 style={{ textAlign: 'left' }}>
-        €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
-        that you can win (if you are good at skateboarding)
+    <div id="wcsprizetable" style={{ textAlign: 'center' }}>
+      <h2>
+        €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ that you can
+        win (if you are good at skateboarding)
       </h2>
-      <img src={urlPrices} />
-      {renderTable('WCS Street Men and Women', streetPrizes)}
-      {renderTable('WCS Miniramp', minirampPrizes)}
+      <img src={urlPrices} style={{ maxWidth: '100%' }} />
+
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          flexWrap: 'wrap',
+          marginTop: '2rem',
+        }}
+      >
+        {renderTable('WCS Street Men and Women', streetPrizes)}
+        {renderTable('WCS Miniramp', minirampPrizes)}
+      </div>
     </div>
   );
 };

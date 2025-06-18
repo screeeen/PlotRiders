@@ -121,6 +121,7 @@ h1 h2 {
 
 img {
   width: 100%;
+  border-radius: 8px;
 }
 
 /* GENERAL TEXT */

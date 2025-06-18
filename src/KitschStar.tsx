@@ -5,7 +5,7 @@ export default function KitschStar() {
   return (
     <div className="kitch-star-css">
       <div className="star-shape"></div>
-      <span className="star-text">how vigoes?!</span>
+      <span className="star-text">not for you!</span>
     </div>
   );
 }

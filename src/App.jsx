@@ -10,6 +10,7 @@ import { Winners } from './Winners';
 
 import './App.css';
 import KitschStar from './KitschStar.tsx';
+import { Skatepark } from './Skatepark.tsx';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
       <div className="generaltext">{WCSPrizeTable()}</div>
       <div className="generaltext">{EventSchedule()}</div>
       <div className="generaltext">{ContestFlow()}</div>
+      <div className="generaltext">{Skatepark()}</div>
       <div className="generaltext">{RegistrationInfo()}</div>
       <Winners />
 
