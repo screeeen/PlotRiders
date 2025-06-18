@@ -44,7 +44,7 @@ export const WCSPrizeTable = () => {
 
   return (
     <div id="wcsprizetable" style={{ textAlign: 'center' }}>
-      <h2>
+      <h2 className="animate__slideOutDown">
         €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ that you can
         win (if you are good at skateboarding)
       </h2>

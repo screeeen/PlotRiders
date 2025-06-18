@@ -9,6 +9,7 @@ export const Skatepark = () => {
   return (
     <div id="imageshowcase">
       <h1>scooter area</h1>
+      <p>you can skate</p>
       <p>
         Lots of mysteries on this park, still unfinished, short and late. It
         will have stones, the classic rainbow for those lazy asses who dont want

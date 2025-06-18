@@ -51,6 +51,7 @@ export const LocationAccess = () => {
         <img src={urlBlur6} />
         <p>Lino Escuris 📷</p>
         <h1>there's no vibes...</h1>
+        <SpotifyIframe />
         <SpotifyIframe2 />
         <img src={urlPuesta2} />
         {/* <img src={urlPuesta3} /> */}

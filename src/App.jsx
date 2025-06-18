@@ -7,6 +7,7 @@ import { EventSchedule } from './EventSchedule';
 import { ContestFlow } from './ContestFlow';
 import { WCSPrizeTable } from './WCSPrizeTable';
 import { Winners } from './Winners';
+import 'animate.css';
 
 import './App.css';
 import KitschStar from './KitschStar.tsx';
@@ -17,7 +18,8 @@ const App = () => {
     <>
       <KitschStar />
       {/* <p>hey... how vigoes...?</p> */}
-      <h2>DON'T COME TO MARISQUIÑO 2025</h2>
+      <h1>DON'T COME</h1>
+      <h1 className="animate__animated animate__hinge"> TO MARISQUIÑO 2025</h1>
       <h3>(your coach will be proud!)</h3>
       <p style={{ padding: '0 1rem' }}>
         <strong style={{ color: 'green', fontStyle: 'italic' }}>
